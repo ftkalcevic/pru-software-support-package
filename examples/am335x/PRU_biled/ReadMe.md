@@ -17,5 +17,6 @@ Run with...
 The argments are 
 
 mode - 0 off, 1 green flash, 2 is red flash, 3 is green/red flash
+
 period - the flash period in ms.
 
