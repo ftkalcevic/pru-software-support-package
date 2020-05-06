@@ -1,0 +1,9 @@
+#!/bin/bash -v
+
+config-pin P9_27 pruout
+config-pin P9_30 pruout
+
+echo 'stop' > /sys/class/remoteproc/remoteproc1/state 
+cp gen/PRU_biled.out /lib/firmware/PRU_biled
+echo 'PRU_biled' > /sys/class/remoteproc/remoteproc1/firmware
+echo 'start' > /sys/class/remoteproc/remoteproc1/state 
