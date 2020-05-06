@@ -1,4 +1,4 @@
-Simple LED flasher example, using shared memory to configure the flashing.  A biled (bipolar/bicolor) with current limiting resistor is placed across output pins P9_27/P9_30.
+Simple LED flasher example, using shared memory to configure the flashing.  A biled (bipolar/bicolor led) with current limiting resistor is placed across output pins P9_27/P9_30.
 
 Use "make" to compile the PRU.
 
