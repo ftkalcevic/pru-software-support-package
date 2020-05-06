@@ -1,0 +1,9 @@
+#!/bin/bash -v
+
+config-pin P9_27 pruout
+config-pin P9_30 pruout
+
+echo 'stop' > /sys/class/remoteproc/remoteproc1/state 
+cp gen/PRU_gpioToggle.out /lib/firmware/pru_gpioToggle 
+echo 'pru_gpioToggle' > /sys/class/remoteproc/remoteproc1/firmware
+echo 'start' > /sys/class/remoteproc/remoteproc1/state 
